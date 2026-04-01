@@ -1,0 +1,35 @@
+# -----------------------------
+# Python 
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.env
+
+# -----------------------------
+# DBT (Data Build Tool)
+# -----------------------------
+sales_dbt/target/
+sales_dbt/dbt_packages/
+sales_dbt/logs/
+
+# -----------------------------
+# O git não deve versionar os bancos locais gigantes nem os arquivos gerados
+output/
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.pbix
+
+# -----------------------------
+# Dados Brutos (Raw)
+# -----------------------------
+# data/raw/*.xlsx
+
+# -----------------------------
+# OS
+# -----------------------------
+.DS_Store
+Thumbs.db

@@ -1,0 +1,7 @@
+sales_dbt:
+  outputs:
+    dev:
+      type: duckdb
+      path: '../output/sales.duckdb'
+      threads: 4
+  target: dev

@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: raw_vendas_1t
+      - name: raw_vendas_2t
+      - name: raw_consultores
+      - name: raw_lojas
+      - name: raw_metas
