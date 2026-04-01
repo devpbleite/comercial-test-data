@@ -1,7 +1,7 @@
 # 📊 Comercial - Análise Financeira e Vendas
 
 ## 📖 Sobre o Projeto
-Este projeto foi desenvolvido para atender ao desafio de analisar a área de vendas de uma rede varejista (Kiosk). O objetivo central é fornecer à área de negócios uma aplicação interativa que permita o cruzamento ágil de informações, análises comparativas e visões temporais do negócio estatisticamente confiáveis.
+Este projeto foi desenvolvido para atender ao desafio de analisar a área de vendas de uma rede varejista. O objetivo central é fornecer à área de negócios uma aplicação interativa que permita o cruzamento ágil de informações, análises comparativas e visões temporais do negócio estatisticamente confiáveis.
 
 A solução projetada é de ponta a ponta (End-to-End): engloba desde o fluxo de transformação de dados (ETL/ELT) até a construção de um painel (Dashboard) interativo com alta qualidade de design.
 
