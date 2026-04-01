@@ -67,5 +67,5 @@ Como o projeto baseia-se em uma arquitetura de dados escalável, ele pode evolui
    - Aproveitar os dados de histórico dentro do Python para projetar estatisticamente no Power BI qual é a tendência calculada de faturamento para o 3º e 4º Trimestres com base nos algoritmos de previsão de série temporal (*Time Series Analysis*).
   
 ---
-💡 *Além destas melhorias citadas, a arquitetura escalável de dados construída no projeto abre portas para incontáveis outras possibilidades analíticas e inovações a serem exploradas no futuro.*
+💡 *Além destas melhorias citadas, a arquitetura escalável de dados construída no projeto abre portas para outras possibilidades analíticas e inovações a serem exploradas no futuro.*
 
