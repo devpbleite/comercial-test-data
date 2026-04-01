@@ -24,7 +24,7 @@ Os modelos processados geram arquivos `.parquet` otimizados para consumo analít
 
 ![Dashboard Comercial - Visão Geral](print_dashboard.png)
 
-🌐 **<a href="https://app.powerbi.com/view?r=eyJrIjoiY2M0YTUyNjItNDM0Ny00ZTc3LTgzYTQtZjc1ZTA4OWI3M2RlIiwidCI6IjM4MTYzMzNiLTA5NGMtNDQyYy1iM2VjLThjZmQ5N2UyMTdhNCJ9" target="_blank">Clique aqui para acessar o Dashboard</a>**
+🌐 **[Clique aqui para acessar o Dashboard](https://app.powerbi.com/view?r=eyJrIjoiY2M0YTUyNjItNDM0Ny00ZTc3LTgzYTQtZjc1ZTA4OWI3M2RlIiwidCI6IjM4MTYzMzNiLTA5NGMtNDQyYy1iM2VjLThjZmQ5N2UyMTdhNCJ9)**
 
 O dashboard **"Visão Geral - Análise Financeira"** atende 100% os critérios solicitados pelo desafio:
 
