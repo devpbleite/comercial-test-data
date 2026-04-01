@@ -5,12 +5,13 @@ Este projeto foi desenvolvido para atender ao desafio de analisar a área de ven
 
 A solução projetada é de ponta a ponta (End-to-End): engloba desde o fluxo de transformação de dados (ETL/ELT) até a construção de um painel (Dashboard) interativo com alta qualidade de design.
 
-## 🏗️ Arquitetura e Stack de Dados
-A pipeline de dados utiliza uma stack moderna, com foco em escalabilidade, controle e performance:
-- **Python & Pandas:** Extração, limpeza e processamento dos dados originais.
-- **DuckDB:** Banco de dados analítico (OLAP) leve e rápido para o consumo.
-- **Dbt:** Aplicação das regras de negócio, transformações modulares, e criação definitiva da arquitetura do *Data Warehouse* em diferentes camadas.
-- **Power BI:** Camada semântica, cálculos avançados em DAX e visualização de dados.
+## 🏗️ Arquitetura e Stack de Dados (ETL / ELT)
+A pipeline de dados utiliza uma stack moderna, onde a transformação foi construída com Dbt, com foco em escalabilidade, controle e performance:
+
+- **Dbt:** Responsável pela etapa de tranformação (ETL/ELT). O Dbt aplica as regras de negócio, realiza a limpeza dos dados, faz a modelagem do Data Warehouse em diferentes camadas (Staging, Marts) e finaliza exportando de maneira automatizada as tabelas em `.parquet`.
+- **Python:** Utilizado de forma enxuta para a extração primária e orquestração do pipeline.
+- **DuckDB:** Atua como o motor e banco de dados analítico (OLAP), processando as consultas de alta performance geradas pelo Dbt.
+- **Power BI:** Camada semântica, cálculos em DAX e visualização de dados.
 
 ### Modelagem Dimensional (Star Schema)
 Os modelos processados geram arquivos `.parquet` otimizados para consumo analítico pelo Power BI:
@@ -51,19 +52,20 @@ O dashboard **"Visão Geral - Análise Financeira"** atende 100% os critérios s
    python run_pipeline.py
    ```
    *(As tabelas finais tratadas serão exportadas como `.parquet` na pasta `output/parquet/`).*
-5. Abra o arquivo `.pbix` no **Power BI Desktop** e clique em "Atualizar" para consumir a versão mais recente dos dados.
 
 ---
 
 ## 🔮 Melhorias Futuras e Roadmap
 Como o projeto baseia-se em uma arquitetura de dados escalável, ele pode evoluir em várias frente de negócios. Sugestões de próximas páginas para o Dashboard do Power BI:
 
-1. **📍 Análise Geográfica (Mapa Inteligente):**
-   - Criação de uma página dedicada contendo visualizações em Mapa térmico ou de bolhas focada no impacto geográfico do varejo. Isso facilitaria o entendimento de densidade de Vendas por Estado e Cidades.
-2. **🤝 Painel de Pelo de Desempenho (Profissional/RH):**
+1. **🤝 Painel de Pelo de Desempenho (Profissional/RH):**
    - Um drill-down profundo construído em uma nova página focado unicamente na equipe: meta alcançada por cada funcionário, curva de aprendizado (relação salário vs faturamento com o tempo) e projeções de comissão.
-3. **📦 Mix e Rentabilidade de Produto:**
+2. **📦 Mix e Rentabilidade de Produto:**
    - Ingestão de tabelas de categorias de produto do sistema de origem para o pipeline em Python/dbt.
    - Entender qual o produto "A" (da curca ABC) que mais contribui pro Ticket Médio e para a Margem de Lucro dentro de cada "Porte de Loja" específico.
-4. **📈 Forecast Automatizado (Previsão Matemática):**
+3. **📈 Forecast Automatizado (Previsão Matemática):**
    - Aproveitar os dados de histórico dentro do Python para projetar estatisticamente no Power BI qual é a tendência calculada de faturamento para o 3º e 4º Trimestres com base nos algoritmos de previsão de série temporal (*Time Series Analysis*).
+  
+---
+💡 *Além destas melhorias citadas, a arquitetura escalável de dados construída no projeto abre portas para incontáveis outras possibilidades analíticas e inovações a serem exploradas no futuro.*
+
