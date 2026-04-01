@@ -24,6 +24,7 @@ Os modelos processados geram arquivos `.parquet` otimizados para consumo analít
 ![Dashboard Comercial - Visão Geral](print_dashboard.png)
 O dashboard **"Visão Geral - Análise Financeira"** atende 100% os critérios solicitados pelo desafio:
 
+
 1. **Analisar o faturamento:** Totalizador claro de Faturamento Total (KPIs de topo) e distribuição percentual do faturamento conforme o "Porte da Loja".
 2. **Analisar as unidades, de acordo com as metas:** O total de "Unidades Vendidas" é monitorado cruzado com a "Meta", possuindo um medidor exato de preenchimento do alvo (% Meta). Há também um gráfico de linha do tempo com a Evolução Mensal do Faturamento Realizado vs Meta projetada.
 3. **Analisar o histórico de vendas por vendedor:** Aplicação de um Ranking dinâmico evidenciando os "Top 5 Vendedores em Faturamento".
