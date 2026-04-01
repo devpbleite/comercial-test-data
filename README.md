@@ -20,6 +20,8 @@ Os modelos processados geram arquivos `.parquet` otimizados para consumo analít
 ---
 
 ## 🎯 Solução Visual e Atendimento aos Requisitos
+
+![Dashboard Comercial - Visão Geral](print_dashboard.png)
 O dashboard **"Visão Geral - Análise Financeira"** atende 100% os critérios solicitados pelo desafio:
 
 1. **Analisar o faturamento:** Totalizador claro de Faturamento Total (KPIs de topo) e distribuição percentual do faturamento conforme o "Porte da Loja".
