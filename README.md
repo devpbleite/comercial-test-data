@@ -8,9 +8,9 @@ A solução projetada é de ponta a ponta (End-to-End): engloba desde o fluxo de
 ## 🏗️ Arquitetura e Stack de Dados
 A pipeline de dados utiliza uma stack moderna, com foco em escalabilidade, controle e performance:
 - **Python & Pandas:** Extração, limpeza e processamento dos dados originais.
-- **DuckDB:** Banco de dados analítico (OLAP) leve e extremamente rápido.
-- **dbt (dbt-duckdb):** Aplicação das regras de negócio, transformações modulares, e criação definitiva da arquitetura do *Data Warehouse* em diferentes camadas.
-- **Power BI:** Camada semântica, cálculos avançados em DAX e visualização de dados (Front-End/Dashboard).
+- **DuckDB:** Banco de dados analítico (OLAP) leve e rápido para o consumo.
+- **Dbt:** Aplicação das regras de negócio, transformações modulares, e criação definitiva da arquitetura do *Data Warehouse* em diferentes camadas.
+- **Power BI:** Camada semântica, cálculos avançados em DAX e visualização de dados.
 
 ### Modelagem Dimensional (Star Schema)
 Os modelos processados geram arquivos `.parquet` otimizados para consumo analítico pelo Power BI:
